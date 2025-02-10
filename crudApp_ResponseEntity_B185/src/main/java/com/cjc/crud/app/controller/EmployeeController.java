@@ -43,7 +43,11 @@ public class EmployeeController {
 	public ResponseEntity<Employee> getsingle(@PathVariable int eid)
 	{
 		Employee emp=es.getsingle(eid);
-		return new ResponseEntity<Employee>(emp,HttpStatus.OK);
+		if(emp!=null && emp.getEid()==eid)
+		{
+			return new ResponseEntity<Employee>(emp,HttpStatus.FOUND);
+		}
+		return new ResponseEntity<Employee>(emp,HttpStatus.NOT_FOUND);
 		
 	}
 	

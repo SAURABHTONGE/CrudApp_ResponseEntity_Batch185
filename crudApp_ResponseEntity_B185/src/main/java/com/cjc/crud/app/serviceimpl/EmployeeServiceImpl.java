@@ -34,6 +34,7 @@ public class EmployeeServiceImpl  implements EmployeeService{
 			   Employee e=op.get();
 			   return e;
 		   }
+		System.out.println("Employee with ID " + eid + " not found");
 		return null;
 	}
 
