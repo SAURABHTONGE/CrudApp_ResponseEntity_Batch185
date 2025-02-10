@@ -38,4 +38,10 @@ public class EmployeeServiceImpl  implements EmployeeService{
 		return null;
 	}
 
+	@Override
+	public Employee updateEmployeeData(Employee e) {
+	Employee save = er.save(e);
+		return save;
+	}
+
 }

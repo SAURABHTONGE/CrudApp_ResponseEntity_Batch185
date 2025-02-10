@@ -12,4 +12,6 @@ public interface EmployeeService {
 
 	Employee getsingle(int eid);
 
+	Employee updateEmployeeData(Employee e);
+
 }
