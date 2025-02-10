@@ -1,5 +1,7 @@
 package com.cjc.crud.app.serviceimpl;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,20 @@ public class EmployeeServiceImpl  implements EmployeeService{
 	@Override
 	public void addEmployeeData(Employee e) {
 		er.save(e);
+	}
+
+	@Override
+	public void deleteSingleRecord(int eid) 
+	{
+
+		er.deleteById(eid);
+	}
+
+	@Override
+	public void deleteAllRecords()
+	{
+
+		er.deleteAll();
 	}
 
 }

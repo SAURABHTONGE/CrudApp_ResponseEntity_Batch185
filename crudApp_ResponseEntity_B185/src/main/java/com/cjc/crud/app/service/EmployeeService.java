@@ -6,4 +6,9 @@ public interface EmployeeService {
 
 	void addEmployeeData(Employee e);
 
+	public void deleteSingleRecord(int eid);
+
+	public void deleteAllRecords();
+
+	
 }
