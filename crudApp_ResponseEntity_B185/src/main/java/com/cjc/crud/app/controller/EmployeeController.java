@@ -16,6 +16,8 @@ import com.cjc.crud.app.service.EmployeeService;
 public class EmployeeController {
 
 
+	
+	
 	@Autowired
 	EmployeeService es;
 	
@@ -24,4 +26,5 @@ public class EmployeeController {
 		es.addEmployeeData(e);
 		return new ResponseEntity<String>("Employee Data Added !!",HttpStatus.CREATED);
 	}
+	
 }
