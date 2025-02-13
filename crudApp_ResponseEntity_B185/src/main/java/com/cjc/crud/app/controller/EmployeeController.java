@@ -53,7 +53,6 @@ public class EmployeeController {
 		return new ResponseEntity<String>("All Data Deleted",HttpStatus.OK);
 		
 	}
-//=======
 	@GetMapping("/getall")
 	public ResponseEntity<List<Employee>> getall()
 	{
@@ -81,5 +80,4 @@ public class EmployeeController {
 		return  new ResponseEntity<Employee>(emp,HttpStatus.OK);
 	}
 	
-//>>>>>>> branch 'main' of https://github.com/SAURABHTONGE/CrudApp_ResponseEntity_Batch185.git
 }
